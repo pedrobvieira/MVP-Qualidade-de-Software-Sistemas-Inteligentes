@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Doença Cardíaca</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo de estilo local -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="main-header">
+            <div class="header-icon">❤️</div>
+            <h1>Modelo Preditivo de Risco Cardíaco</h1>
+            <p>Insira os dados clínicos do paciente para obter uma análise de risco baseada em nosso modelo de Machine Learning.</p>
+        </header>
+
+        <form id="prediction-form">
+            <div class="form-grid">
+                
+                <!-- Campos do formulário -->
+                <div class="form-group">
+                    <label for="age">Idade</label>
+                    <input type="number" id="age" name="age" required placeholder="Ex: 52">
+                </div>
+
+                <div class="form-group">
+                    <label for="sex">Sexo</label>
+                    <select id="sex" name="sex">
+                        <option value="1">Masculino</option>
+                        <option value="0">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cp">Tipo de Dor no Peito</label>
+                    <select id="cp" name="cp">
+                        <option value="0">Angina Típica</option>
+                        <option value="1">Angina Atípica</option>
+                        <option value="2">Dor Não-anginosa</option>
+                        <option value="3">Assintomático</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="trestbps">Pressão Arterial (repouso)</label>
+                    <input type="number" id="trestbps" name="trestbps" required placeholder="Ex: 120">
+                </div>
+
+                <div class="form-group">
+                    <label for="chol">Colesterol Sérico (mg/dl)</label>
+                    <input type="number" id="chol" name="chol" required placeholder="Ex: 210">
+                </div>
+
+                <div class="form-group">
+                    <label for="fbs">Glicemia de Jejum > 120 mg/dl</label>
+                    <select id="fbs" name="fbs">
+                        <option value="1">Verdadeiro</option>
+                        <option value="0">Falso</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="restecg">Eletrocardiograma (repouso)</label>
+                    <select id="restecg" name="restecg">
+                        <option value="0">Normal</option>
+                        <option value="1">Anormalidade ST-T</option>
+                        <option value="2">Hipertrofia Ventricular</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="thalach">Freq. Cardíaca Máxima</label>
+                    <input type="number" id="thalach" name="thalach" required placeholder="Ex: 150">
+                </div>
+
+                <div class="form-group">
+                    <label for="exang">Angina por Exercício</label>
+                    <select id="exang" name="exang">
+                        <option value="1">Sim</option>
+                        <option value="0">Não</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="oldpeak">Depressão de ST (oldpeak)</label>
+                    <input type="number" step="0.1" id="oldpeak" name="oldpeak" required placeholder="Ex: 1.6">
+                </div>
+                
+                <div class="form-group">
+                    <label for="slope">Inclinação do Segmento ST</label>
+                     <select id="slope" name="slope">
+                        <option value="0">Ascendente</option>
+                        <option value="1">Plana</option>
+                        <option value="2">Descendente</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ca">Nº de Vasos Principais (0-4)</label>
+                    <input type="number" id="ca" name="ca" min="0" max="4" required placeholder="Ex: 0">
+                </div>
+
+                <div class="form-group">
+                    <label for="thal">Talassemia</label>
+                    <select id="thal" name="thal">
+                        <option value="1">Normal</option>
+                        <option value="2">Defeito Fixo</option>
+                        <option value="3">Defeito Reversível</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Realizar Predição</span>
+                    <span class="button-loader" style="display: none;"></span>
+                </button>
+            </div>
+        </form>
+
+        <!-- Área de Resultado -->
+        <div id="result-area" class="result-container" style="display: none;">
+            <!-- O resultado da predição será inserido aqui pelo JavaScript -->
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript local -->
+    <script src="script.js"></script>
+</body>
+</html>
