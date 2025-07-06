@@ -62,7 +62,7 @@ O seu navegador abrirá automaticamente a aplicação.
 Agora, pode interagir com o formulário no seu navegador. As requisições serão enviadas para a API em execução e os resultados da previsão serão exibidos na tela.
 
 ## 4. O Modelo de Machine Learning
-O processo de criação do modelo de Machine Learning está documentado no ficheiro notebook_treinamento.ipynb. Este notebook cobre todas as etapas exigidas pela disciplina:
+O processo de criação do modelo de Machine Learning está documentado no Notebook_de_Classificação_de_Doenças_Cardíacas_(VS_Code_Colab) (1).ipynb. Este notebook cobre todas as etapas exigidas pela disciplina:
 
 Carga e Análise Exploratória dos Dados.
 
