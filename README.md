@@ -1,4 +1,4 @@
-# MVP--Qualidade-de-Software--Seguran-a-e-Sistemas-Inteligentes
+# MVP Qualidade de Software, Segurança e Sistemas Inteligentes.
 
 1. Objetivo do Projeto
 Construir uma solução completa que utiliza algoritmos de classificação para prever o risco de doença cardíaca, disponibilizando o modelo através de uma API consumida por uma interface web interativa.
