@@ -1,32 +1,29 @@
-# MVP Qualidade de Software, Segurança e Sistemas Inteligentes.
+# MVP Qualidade de Software, Segurança e Sistemas Inteligentes
 
-1. Objetivo do Projeto
+### 1. Objetivo do Projeto
 Construir uma solução completa que utiliza algoritmos de classificação para prever o risco de doença cardíaca, disponibilizando o modelo através de uma API consumida por uma interface web interativa.
 
-2. Visão Geral
-Este projeto consiste na criação de uma solução completa de Machine Learning para prever o risco de doenças cardíacas em pacientes com base em dados clínicos. A solução abrange desde a análise e treino do modelo até à sua implementação como uma API de back-end e o consumo por uma aplicação web de front-end.
+### 2. Visão Geral
+Este projeto consiste na criação de uma solução completa de **Machine Learning** para prever o risco de doenças cardíacas em pacientes com base em dados clínicos. A solução abrange desde a análise e treino do modelo até a sua implementação como uma **API de back-end** e o consumo por uma **aplicação web de front-end**.
 
-Este repositório contém todos os artefactos necessários para a avaliação do MVP da Pós-Graduação em Engenharia de Software, incluindo o notebook de treino, a aplicação full stack, os testes automatizados e a documentação.
+Este repositório contém todos os artefatos necessários para a avaliação do MVP da Pós-Graduação em Engenharia de Software, incluindo o notebook de treino, a aplicação full-stack, os testes automatizados e a documentação.
 
-Tecnologias Utilizadas:
+**Tecnologias Utilizadas:**
+* **Linguagem:** Python, JavaScript
+* **Machine Learning:** Scikit-Learn, Pandas, NumPy
+* **Back-end:** Flask, Flask-CORS
+* **Front-end:** HTML5, CSS3, JavaScript (Vanilla)
+* **Testes:** Pytest
 
-Linguagem: Python, JavaScript
+---
 
-Machine Learning: Scikit-Learn, Pandas, NumPy
-
-Back-end: Flask, Flask-CORS
-
-Front-end: HTML5, CSS3, JavaScript (Vanilla)
-
-Testes: PyTest
-
-3. Como Executar a Aplicação
+### 3. Como Executar a Aplicação
 Para executar o projeto, é necessário ter o Python 3 e o pip instalados. Siga os passos abaixo, que envolvem executar o back-end e o front-end em terminais separados.
 
-3.1. Executar o Back-end (API)
-Navegue até à pasta api:
-
-cd api
+#### 3.1. Executar o Back-end (API)
+1. Navegue até a pasta `api`:
+   ```bash
+   cd api
 
 Crie e ative um ambiente virtual:
 
@@ -39,17 +36,17 @@ python -m venv venv
 # Ativar no macOS/Linux
 source venv/bin/activate
 
-Instale as dependências:
+# Instale as dependências:
 
 pip install -r requirements.txt
 
-Inicie o servidor Flask:
+# Inicie o servidor Flask:
 
 flask run
 
-A API estará a ser executada em http://127.0.0.1:5000. Deixe este terminal aberto.
+# A API estará a ser executada em http://127.0.0.1:5000. Deixe este terminal aberto.
 
-3.2. Executar o Front-end
+# 3.2. Executar o Front-end
 A forma mais fácil é usar a extensão Live Server no VS Code.
 
 Abra a pasta front no VS Code.
@@ -60,7 +57,7 @@ O seu navegador abrirá automaticamente a aplicação.
 
 Agora, pode interagir com o formulário no seu navegador. As requisições serão enviadas para a API em execução e os resultados da previsão serão exibidos na tela.
 
-4. O Modelo de Machine Learning
+# 4. O Modelo de Machine Learning
 O processo de criação do modelo de Machine Learning está documentado no ficheiro notebook_treinamento.ipynb. Este notebook cobre todas as etapas exigidas pela disciplina:
 
 Carga e Análise Exploratória dos Dados.
@@ -73,7 +70,7 @@ Avaliação e Comparação dos modelos para selecionar o melhor.
 
 Exportação do modelo final para o ficheiro heart_disease_model.pkl.
 
-5. Testes Automatizados
+# 5. Testes Automatizados
 Para garantir a qualidade e o desempenho do modelo, foi implementado um teste automatizado com PyTest.
 
 Para executar os testes:
@@ -88,7 +85,7 @@ pytest
 
 Os testes irão verificar se o modelo carrega corretamente e se o seu desempenho (acurácia) está acima de um limiar pré-definido, prevenindo a implantação de um modelo com performance inferior.
 
-6. Reflexão sobre Desenvolvimento de Software Seguro
+# 6. Reflexão sobre Desenvolvimento de Software Seguro
 Lidar com dados de saúde exige uma atenção redobrada à segurança e à privacidade, conforme as boas práticas de Desenvolvimento de Software Seguro.
 
 Anonimização de Dados:
