@@ -78,3 +78,11 @@ Lidar com dados de saúde exige atenção redobrada à segurança e privacidade.
 Anonimização de Dados: O dataset usado é anônimo. Em um cenário real, dados sensíveis seriam submetidos a pseudonimização, generalização e mascaramento.
 
 Segurança da Aplicação: A API deve validar rigorosamente todos os dados recebidos (validação no back-end), e a comunicação em produção deve ser feita sobre HTTPS. Para garantir que apenas usuários autorizados acessem a API, seria implementado um sistema de autenticação e autorização.
+
+## 👤 Autor
+
+Feito  por Pedro Brum Vieira.
+
+* **LinkedIn:** [https://www.linkedin.com/in/pedro-brum-vieira-68583b215/](https://www.linkedin.com/in/pedro-brum-vieira-68583b215/)
+* **GitHub:** [https://github.com/pedrobvieira](https://github.com/pedrobvieira)
+
