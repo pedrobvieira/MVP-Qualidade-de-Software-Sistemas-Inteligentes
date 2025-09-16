@@ -41,6 +41,10 @@ flask run
 
 A API estará em execução em http://127.0.0.1:5000. Mantenha este terminal aberto.
 
+```
+
+A API estará em execução em http://127.0.0.1:5000. Mantenha este terminal aberto.
+
 2. Executar o Front-end
 Abra a pasta front e execute o arquivo index.html em seu navegador. A forma mais fácil é usando a extensão Live Server no VS Code.
 
