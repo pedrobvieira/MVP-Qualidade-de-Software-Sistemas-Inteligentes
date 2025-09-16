@@ -43,12 +43,11 @@ A API estará em execução em http://127.0.0.1:5000. Mantenha este terminal abe
 
 ```
 
-A API estará em execução em http://127.0.0.1:5000. Mantenha este terminal aberto.
 
-2. Executar o Front-end
+### 2. Executar o Front-end
 Abra a pasta front e execute o arquivo index.html em seu navegador. A forma mais fácil é usando a extensão Live Server no VS Code.
 
-🧠 Sobre o Modelo de Machine Learning
+## 🧠 Sobre o Modelo de Machine Learning
 O processo de criação do modelo está documentado no notebook_treinamento.ipynb e inclui as seguintes etapas:
 
 Análise Exploratória dos dados.
@@ -61,7 +60,7 @@ Avaliação dos modelos para seleção do mais adequado.
 
 Exportação do modelo final para o arquivo heart_disease_model.pkl.
 
-✅ Testes Automatizados
+## ✅ Testes Automatizados
 Para garantir a qualidade, foi implementado um teste automatizado com PyTest.
 
 A partir da pasta api (e com o ambiente virtual ativado), execute o comando:
@@ -71,7 +70,7 @@ Bash
 pytest
 O teste verifica se o modelo carrega corretamente e se a sua acurácia está acima de um limiar pré-definido, prevenindo a implantação de um modelo de baixa performance.
 
-🛡️ Segurança e Privacidade
+## 🛡️ Segurança e Privacidade
 Lidar com dados de saúde exige atenção redobrada à segurança e privacidade. As boas práticas de Desenvolvimento de Software Seguro (SSD) foram consideradas:
 
 Anonimização de Dados: O dataset usado é anônimo. Em um cenário real, dados sensíveis seriam submetidos a pseudonimização, generalização e mascaramento.
