@@ -65,9 +65,11 @@ Para garantir a qualidade, foi implementado um teste automatizado com PyTest.
 
 A partir da pasta api (e com o ambiente virtual ativado), execute o comando:
 
-Bash
+```bash
 
 pytest
+```
+
 O teste verifica se o modelo carrega corretamente e se a sua acurácia está acima de um limiar pré-definido, prevenindo a implantação de um modelo de baixa performance.
 
 ## 🛡️ Segurança e Privacidade
