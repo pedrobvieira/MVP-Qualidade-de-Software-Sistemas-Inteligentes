@@ -34,7 +34,7 @@ Crie e ative um ambiente virtual:
 python -m venv venv
 
 # Ativar no Windows (cmd)
-venv\Scripts\activate
+.\venv\Scripts\Activate.ps1
 
 # Ativar no macOS/Linux
 source venv/bin/activate
